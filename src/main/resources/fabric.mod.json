@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "clearwater",
+  "version": "v1.0",
+
+  "name": "ClearWater",
+  "description": "A mod that makes minecraft water just a tad bit clearer.",
+  "authors": [
+    "shea"
+  ],
+  "contact": {
+    "homepage": "https://goobus.lol/",
+    "sources": "https://github.com/sheataru/ClearWater"
+  },
+
+  "license": "MIT",
+  "icon": "assets/clearwater/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "lol.goobus.clearwater.ClearWater"
+      }
+    ]
+  },
+  "mixins": [
+    "clearwater.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "fabric-api": "*",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-language-kotlin": ">=1.10.0"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
