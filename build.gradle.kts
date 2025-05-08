@@ -69,9 +69,9 @@ tasks {
 }
 
 java {
-    // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
-    // if it is present.
-    // If you remove this line, sources will not be generated.
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
+    }
     withSourcesJar()
 }
 
